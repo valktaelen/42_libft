@@ -33,17 +33,17 @@ et en faire une bibliothèque.
 
 ## Fonctions supplémentaires
 
-- [ft_substr](code/ft_ft_substr.c)
-- [ft_strjoin](code/ft_ft_strjoin.c)
-- [ft_strtrim](code/ft_ft_strtrim.c)
-- [ft_split](code/ft_ft_split.c)
-- [ft_itoa](code/ft_ft_itoa.c)
-- [ft_strmapi](code/ft_ft_strmapi.c)
-- [ft_striteri](code/ft_ft_striteri.c)
-- [ft_putchar_fd](code/ft_ft_putchar_fd.c)
-- [ft_putstr_fd](code/ft_ft_putstr_fd.c)
-- [ft_putendl_fd](code/ft_ft_putendl_fd.c)
-- [ft_putnbr_fd](code/ft_ft_putnbr_fd.c)
+- [ft_substr](code/ft_substr.c)
+- [ft_strjoin](code/ft_strjoin.c)
+- [ft_strtrim](code/ft_strtrim.c)
+- [ft_split](code/ft_split.c)
+- [ft_itoa](code/ft_itoa.c)
+- [ft_strmapi](code/ft_strmapi.c)
+- [ft_striteri](code/ft_striteri.c)
+- [ft_putchar_fd](code/ft_putchar_fd.c)
+- [ft_putstr_fd](code/ft_putstr_fd.c)
+- [ft_putendl_fd](code/ft_putendl_fd.c)
+- [ft_putnbr_fd](code/ft_putnbr_fd.c)
 
 # Utilisation
 
