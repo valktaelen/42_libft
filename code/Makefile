@@ -6,9 +6,19 @@
 #    By: aartiges <aartiges@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/07 20:38:51 by aartiges          #+#    #+#              #
-#    Updated: 2022/10/03 23:23:37 by aartiges         ###   ########lyon.fr    #
+#    Updated: 2022/10/04 01:17:44 by aartiges         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
+
+################################################################################
+##                               Présentation                                 ##
+################################################################################
+
+COLOR_NORM		=	\033[0m
+COLOR_RED		=	\033[31m
+COLOR_PURPLE	=	\033[35m
+
+############
 
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
@@ -37,21 +47,25 @@ RM = rm -rf
 LIBC = ar
 LIBF = rcs
 
-%.o : %.c  $(HEADERS)
-	${CC} ${CFLAGS} -c $< -o $@ 
+%.o : %.c  $(HEADERS) Makefile
+	@printf "\r\033[K\tCompilation of $(COLOR_PURPLE)$< ==> $@\$(COLOR_NORM)"
+	@${CC} ${CFLAGS} -c $< -o $@ 
 
 all: 		${NAME}
 
 $(NAME):	$(OBJS)
-			$(LIBC) $(LIBF) $(NAME) $(OBJS)
+			@printf "\r\033[K\tCreation of $(COLOR_PURPLE)$@\$(COLOR_NORM)\n"
+			@$(LIBC) $(LIBF) $(NAME) $(OBJS)
 
 bonus: ${OBJS} ${OBJSBONUS}
-			$(LIBC) $(LIBF) ${NAME} ${OBJS} ${OBJSBONUS}
+			@echo
+			@echo 'Compilation of libft'
+			@$(LIBC) $(LIBF) ${NAME} ${OBJS} ${OBJSBONUS}
 
 clean:
-			${RM} ${OBJS} ${OBJSBONUS}
+			@${RM} ${OBJS} ${OBJSBONUS}
 
 fclean: clean
-			${RM} ${NAME}
+			@${RM} ${NAME}
 
 re: fclean all

@@ -6,13 +6,13 @@
 /*   By: aartiges <aartiges@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 02:40:40 by aartiges          #+#    #+#             */
-/*   Updated: 2021/11/06 03:12:56 by aartiges         ###   ########lyon.fr   */
+/*   Updated: 2021/11/26 00:48:30 by aartiges         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa_rec(long n, int index, int *len, int negative)
+static char	*ft_itoa_rec(long n, int index, int *len, int negative)
 {
 	char	*ret;
 

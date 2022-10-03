@@ -6,7 +6,7 @@
 /*   By: aartiges <aartiges@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 13:33:40 by aartiges          #+#    #+#             */
-/*   Updated: 2022/10/03 23:23:22 by aartiges         ###   ########lyon.fr   */
+/*   Updated: 2022/10/04 01:13:22 by aartiges         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 // ADD
 
 int		ft_isspace(char c);
+char	*ft_strjoin_null(char const *s1, char const *s2);
+long	ft_atoi_custom_long(const char *str);
 
 #endif
