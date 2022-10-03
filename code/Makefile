@@ -6,7 +6,7 @@
 #    By: aartiges <aartiges@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/07 20:38:51 by aartiges          #+#    #+#              #
-#    Updated: 2021/11/07 20:49:26 by aartiges         ###   ########lyon.fr    #
+#    Updated: 2022/10/03 23:23:37 by aartiges         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 		ft_atoi.c ft_calloc.c ft_strdup.c \
 		ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
 		ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
-		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
+		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_isspace.c
 
 OBJS = ${SRCS:.c=.o}
 
